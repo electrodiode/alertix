@@ -1,6 +1,6 @@
 function alertix(message) {
   const alertix = document.createElement('div');
-  alertix.classList.add('alertix'); // Cambiado el nombre de la clase
+  alertix.classList.add('alertix'); 
 
 
   const alertixContent = `
@@ -13,7 +13,7 @@ function alertix(message) {
       left: 0;
       right: 0;
       display: flex;
-      flex-direction: column; /* Cambiado a dirección de columna */
+      flex-direction: column;
       align-items: center;
       margin-top: 10px;
       user-select: none;
@@ -28,7 +28,7 @@ function alertix(message) {
       max-width: 400px;
       position: relative;
       animation: fadeInUp 0.5s ease forwards;
-      margin-bottom: 10px; /* Espacio entre alertas */
+      margin-bottom: 10px;
     }
     
 
@@ -69,7 +69,7 @@ function alertix(message) {
 
   alertix.innerHTML = alertixContent;
 
-  document.getElementById('alertix').appendChild(alertix); // Usar el nuevo contenedor
+  document.getElementById('alertix').appendChild(alertix);
 
   const closeButton = alertix.querySelector('.cerrar');
   closeButton.addEventListener('click', () => {
