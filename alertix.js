@@ -17,6 +17,7 @@ function alertix(message) {
       align-items: center;
       margin-top: 10px;
       user-select: none;
+      z-index: 9999;
     }
     
     .alerta {
